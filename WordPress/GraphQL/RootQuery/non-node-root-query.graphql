@@ -1,0 +1,340 @@
+query NON_NODE_QUERY {
+  allSettings {
+    discussionSettingsDefaultCommentStatus
+    discussionSettingsDefaultPingStatus
+    generalSettingsDateFormat
+    generalSettingsDescription
+    generalSettingsEmail
+    generalSettingsLanguage
+    generalSettingsStartOfWeek
+    generalSettingsTimeFormat
+    generalSettingsTimezone
+    generalSettingsTitle
+    generalSettingsUrl
+    readingSettingsPageForPosts
+    readingSettingsPageOnFront
+    readingSettingsPostsPerPage
+    readingSettingsShowOnFront
+    writingSettingsDefaultCategory
+    writingSettingsDefaultPostFormat
+    writingSettingsUseSmilies
+  }
+
+  discussionSettings {
+    defaultCommentStatus
+    defaultPingStatus
+  }
+
+  generalSettings {
+    dateFormat
+    description
+    email
+    language
+    startOfWeek
+    timeFormat
+    timezone
+    title
+    url
+  }
+
+  options {
+    acfOptions {
+      blogContent
+      blogTitle
+
+      bottom {
+        button
+        buttonUrl
+        content
+        content2
+        content3
+        fieldGroupName
+
+        logo {
+          __typename
+          id
+        }
+
+        logo2 {
+          __typename
+          id
+        }
+
+        title
+        title2
+        title3
+      }
+
+      content
+      copy
+      fieldGroupName
+
+      gallery {
+        __typename
+        id
+      }
+
+      showPopup
+
+      social {
+        fieldGroupName
+
+        icon {
+          __typename
+          id
+        }
+
+        url
+      }
+
+      socialTitle
+      supportButton
+      supportButtonUrl
+      supportContent
+      supportTitle
+
+      top {
+        button
+        buttonUrl
+        content
+        content2
+        fieldGroupName
+        form
+        title
+        title2
+      }
+
+      video
+
+      videos {
+        fieldGroupName
+        videoUrl
+      }
+    }
+
+    pageSlug
+    pageTitle
+  }
+
+  readingSettings {
+    pageForPosts
+    pageOnFront
+    postsPerPage
+    showOnFront
+  }
+
+  seo {
+    breadcrumbs {
+      archivePrefix
+      boldLast
+      enabled
+      homeText
+      notFoundText
+      prefix
+      searchPrefix
+      separator
+      showBlogPage
+    }
+
+    contentTypes {
+      actionMonitorAction {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      mediaItem {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      page {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      post {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+    }
+
+    openGraph {
+      defaultImage {
+        __typename
+        id
+      }
+
+      frontPage {
+        description
+
+        image {
+          __typename
+          id
+        }
+
+        title
+      }
+    }
+
+    redirects {
+      format
+      origin
+      target
+      type
+    }
+
+    schema {
+      companyLogo {
+        __typename
+        id
+      }
+
+      companyName
+      companyOrPerson
+      homeUrl
+      inLanguage
+
+      logo {
+        __typename
+        id
+      }
+
+      personLogo {
+        __typename
+        id
+      }
+
+      personName
+      siteName
+      siteUrl
+      wordpressSiteName
+    }
+
+    social {
+      facebook {
+        defaultImage {
+          __typename
+          id
+        }
+
+        url
+      }
+
+      instagram {
+        url
+      }
+
+      linkedIn {
+        url
+      }
+
+      mySpace {
+        url
+      }
+
+      pinterest {
+        metaTag
+        url
+      }
+
+      twitter {
+        cardType
+        username
+      }
+
+      wikipedia {
+        url
+      }
+
+      youTube {
+        url
+      }
+    }
+
+    webmaster {
+      baiduVerify
+      googleVerify
+      msVerify
+      yandexVerify
+    }
+  }
+
+  wpGatsby {
+    arePrettyPermalinksEnabled
+    isPreviewFrontendOnline
+  }
+
+  writingSettings {
+    defaultCategory
+    defaultPostFormat
+    useSmilies
+  }
+}

@@ -1,0 +1,118 @@
+query NODE_LIST_QUERY($first: Int!, $after: String) {
+  users(first: $first, after: $after) {
+    nodes {
+      avatar {
+        default
+        extraAttr
+        forceDefault
+        foundAvatar
+        height
+        rating
+        scheme
+        size
+        url
+        width
+      }
+
+      capKey
+      capabilities
+
+      comments(first: 100) {
+        nodes {
+          id
+        }
+      }
+
+      databaseId
+      description
+      email
+      extraCapabilities
+      firstName
+      id
+      isContentNode
+      isTermNode
+      lastName
+      locale
+      name
+      nicename
+      nickname
+
+      pages(first: 100) {
+        nodes {
+          id
+        }
+      }
+
+      posts(first: 100) {
+        nodes {
+          id
+        }
+      }
+
+      registeredDate
+
+      roles(first: 100) {
+        nodes {
+          id
+        }
+      }
+
+      seo {
+        breadcrumbTitle
+        canonical
+        fullHead
+        language
+        metaDesc
+        metaRobotsNofollow
+        metaRobotsNoindex
+        opengraphDescription
+
+        opengraphImage {
+          __typename
+          id
+        }
+
+        opengraphTitle
+        region
+
+        schema {
+          articleType
+          pageType
+          raw
+        }
+
+        social {
+          facebook
+          instagram
+          linkedIn
+          mySpace
+          pinterest
+          soundCloud
+          twitter
+          wikipedia
+          youTube
+        }
+
+        title
+        twitterDescription
+
+        twitterImage {
+          __typename
+          id
+        }
+
+        twitterTitle
+      }
+
+      slug
+      uri
+      url
+      username
+      __typename
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

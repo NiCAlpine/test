@@ -1,0 +1,878 @@
+query PREVIEW_QUERY($id: ID!) {
+  page(id: $id, idType: ID, asPreview: true) {
+    acfApplications {
+      applications {
+        content
+        content2
+        content3
+        fieldGroupName
+        pretitle
+        title
+        title2
+        title3
+      }
+
+      caseStudy {
+        after {
+          __typename
+          id
+        }
+
+        before {
+          __typename
+          id
+        }
+
+        beforeAfterEmbed
+        button
+        buttonUrl
+        content
+        fieldGroupName
+        title
+      }
+
+      fieldGroupName
+
+      visualization {
+        content
+        fieldGroupName
+        pretitle
+        subtitle
+        title
+      }
+    }
+
+    acfBuyNow {
+      bookADemo {
+        background {
+          __typename
+          id
+        }
+
+        button
+        buttonUrl
+        content
+        fieldGroupName
+        title
+      }
+
+      comingSoon {
+        content
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        logo {
+          __typename
+          id
+        }
+
+        title
+      }
+
+      fieldGroupName
+
+      getNotified {
+        content
+        fieldGroupName
+        title
+      }
+
+      getStarted {
+        discount
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        logo {
+          __typename
+          id
+        }
+
+        pricing {
+          fieldGroupName
+
+          tables {
+            fieldGroupName
+
+            rows {
+              discount
+              fieldGroupName
+              interval
+              number
+              onSale
+              price
+              seats
+            }
+
+            title
+          }
+        }
+
+        productFeatures {
+          features {
+            feature
+            fieldGroupName
+          }
+
+          fieldGroupName
+          title
+        }
+
+        subtitle
+
+        systemRequirements {
+          fieldGroupName
+
+          requirements {
+            col1
+            col2
+            col3
+            fieldGroupName
+          }
+
+          title
+        }
+
+        title
+      }
+    }
+
+    acfContact {
+      fieldGroupName
+
+      form {
+        content
+        fieldGroupName
+        newsletterContent
+        newsletterTitle
+        title
+      }
+
+      locationContent {
+        content
+        fieldGroupName
+
+        logo {
+          __typename
+          id
+        }
+      }
+
+      locations {
+        fieldGroupName
+
+        location {
+          city
+          country
+          countryShort
+          latitude
+          longitude
+          placeId
+          postCode
+          state
+          stateShort
+          streetAddress
+          streetName
+          streetNumber
+          zoom
+        }
+
+        phone
+        title
+      }
+    }
+
+    acfCustom {
+      button
+      buttonurl
+      desc
+
+      examples {
+        fieldGroupName
+
+        projectExamples {
+          fieldGroupName
+
+          image {
+            __typename
+            id
+          }
+
+          type
+          video
+        }
+      }
+
+      fieldGroupName
+
+      formImage {
+        __typename
+        id
+      }
+
+      formtext
+
+      process {
+        fieldGroupName
+
+        image1 {
+          __typename
+          id
+        }
+
+        image2 {
+          __typename
+          id
+        }
+
+        image3 {
+          __typename
+          id
+        }
+
+        image4 {
+          __typename
+          id
+        }
+
+        processTitle
+        step1
+        step2
+        step3
+        step4
+      }
+
+      title
+      video
+
+      workWith {
+        fieldGroupName
+
+        logosWorkedWith {
+          fieldGroupName
+
+          logos {
+            __typename
+            id
+          }
+        }
+      }
+    }
+
+    acfDevelopment {
+      alpine {
+        button
+        buttonUrl
+        content
+        fieldGroupName
+
+        gallery {
+          fieldGroupName
+
+          image {
+            __typename
+            id
+          }
+
+          type
+          video
+        }
+
+        logo {
+          __typename
+          id
+        }
+
+        pretitle
+        sideTitle
+        subtitle
+        title
+      }
+
+      banner3 {
+        background {
+          __typename
+          id
+        }
+
+        content
+        fieldGroupName
+        title
+      }
+
+      button {
+        buttonbackground {
+          __typename
+          id
+        }
+
+        fieldGroupName
+      }
+
+      fieldGroupName
+
+      history {
+        content
+        fieldGroupName
+
+        logo {
+          __typename
+          id
+        }
+
+        pretitle
+        subtitle
+        title
+      }
+
+      timeline {
+        content
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        title
+        video
+        year
+      }
+    }
+
+    acfFAQ {
+      button
+      buttonUrl
+
+      faqs {
+        answer
+        fieldGroupName
+        question
+      }
+
+      fieldGroupName
+    }
+
+    acfHome {
+      banner {
+        button
+        buttonUrl
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        subtitle
+        title
+        video
+      }
+
+      featuresText {
+        button
+        button2
+        buttonUrl
+        buttonUrl2
+        content
+        fieldGroupName
+        title
+      }
+
+      fieldGroupName
+
+      gallery {
+        content
+        fieldGroupName
+
+        gallery {
+          fieldGroupName
+
+          image {
+            __typename
+            id
+          }
+
+          type
+          video
+        }
+
+        subtitle
+        title
+      }
+
+      services {
+        button {
+          target
+          title
+          url
+        }
+
+        content
+        fieldGroupName
+        title
+        video
+      }
+
+      servicetable {
+        fieldGroupName
+
+        service1 {
+          aspects
+          button
+          buttonurl
+          description
+          fieldGroupName
+
+          logo {
+            __typename
+            id
+          }
+
+          title
+        }
+
+        service2 {
+          aspects
+          button
+          buttonurl
+          description
+          fieldGroupName
+
+          logo {
+            __typename
+            id
+          }
+
+          title
+        }
+
+        service3 {
+          aspects
+          button
+          buttonurl
+          description
+          fieldGroupName
+
+          logo {
+            __typename
+            id
+          }
+
+          title
+        }
+      }
+
+      text {
+        button
+        buttonUrl
+        content
+        fieldGroupName
+        pretitle
+        subtitle
+        title
+      }
+
+      textLeftImage {
+        button
+        buttonUrl
+        content
+        description
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        logo {
+          __typename
+          id
+        }
+
+        subtitle
+        title
+      }
+
+      textRightImage {
+        content
+        fieldGroupName
+
+        interactiveImages {
+          fieldGroupName
+
+          image {
+            fieldGroupName
+
+            image {
+              __typename
+              id
+            }
+
+            text {
+              content
+              fieldGroupName
+              left
+              top
+            }
+          }
+        }
+
+        mobileVideo
+        subtitle
+        title
+      }
+    }
+
+    acfServices {
+      fieldGroupName
+
+      heading {
+        content
+        fieldGroupName
+        pretitle
+        subtitle
+        title
+      }
+
+      imageText {
+        button
+        buttonUrl
+        content
+        fieldGroupName
+        leftImage
+        title
+      }
+
+      servicesGroup {
+        content
+        content2
+        fieldGroupName
+        pretitle
+        title
+        title2
+      }
+    }
+
+    acfStandDesigner {
+      banner2 {
+        background {
+          __typename
+          id
+        }
+
+        content
+        fieldGroupName
+        subtitle
+        title
+      }
+
+      capture {
+        content
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        title
+      }
+
+      features {
+        button
+        buttonUrl
+        content
+        content2
+        description
+        fieldGroupName
+
+        logo {
+          __typename
+          id
+        }
+
+        subtitle
+        subtitle2
+        title
+        title2
+      }
+
+      fieldGroupName
+
+      import {
+        content
+        fieldGroupName
+
+        gallery {
+          __typename
+          id
+        }
+
+        title
+      }
+
+      interactiveImages {
+        fieldGroupName
+
+        image {
+          fieldGroupName
+
+          image {
+            __typename
+            id
+          }
+
+          text {
+            content
+            fieldGroupName
+            left
+            top
+          }
+        }
+      }
+
+      model {
+        button
+        content
+        fieldGroupName
+
+        gallery {
+          fieldGroupName
+
+          image {
+            __typename
+            id
+          }
+
+          type
+          video
+        }
+
+        popup {
+          columns {
+            content
+            fieldGroupName
+          }
+
+          fieldGroupName
+          title
+        }
+
+        title
+      }
+
+      quantify {
+        content
+        fieldGroupName
+
+        gallery {
+          fieldGroupName
+
+          image {
+            __typename
+            id
+          }
+
+          type
+          video
+        }
+
+        title
+      }
+
+      requirements {
+        button
+        button2
+        buttonUrl
+        buttonUrl2
+        content
+        fieldGroupName
+
+        logo {
+          __typename
+          id
+        }
+
+        slogan
+        subtitle
+
+        table {
+          col1
+          col2
+          col3
+          fieldGroupName
+        }
+
+        tableTitle
+        title
+      }
+
+      simulate {
+        content
+        fieldGroupName
+        title
+        video
+      }
+    }
+
+    acfVFPro {
+      fieldGroupName
+      video
+    }
+
+    ancestors(first: 100) {
+      nodes {
+        id
+        __typename
+      }
+    }
+
+    author {
+      node {
+        id
+      }
+    }
+
+    authorDatabaseId
+    authorId
+
+    wpChildren: children(first: 100) {
+      nodes {
+        id
+        __typename
+      }
+    }
+
+    commentCount
+    commentStatus
+
+    comments(first: 100) {
+      nodes {
+        id
+      }
+    }
+
+    content
+
+    contentType {
+      node {
+        id
+      }
+    }
+
+    contentTypeName
+    databaseId
+    date
+    dateGmt
+    desiredSlug
+    enclosure
+
+    featuredImage {
+      node {
+        __typename
+        id
+      }
+    }
+
+    featuredImageDatabaseId
+    featuredImageId
+    guid
+    id
+    isContentNode
+    isFrontPage
+    isPostsPage
+    isPrivacyPage
+    isRevision
+    isTermNode
+
+    lastEditedBy {
+      node {
+        id
+      }
+    }
+
+    link
+    menuOrder
+    modified
+    modifiedGmt
+
+    wpParent: parent {
+      node {
+        id
+        __typename
+      }
+    }
+
+    parentDatabaseId
+    parentId
+
+    seo {
+      breadcrumbs {
+        text
+        url
+      }
+
+      canonical
+      cornerstone
+      focuskw
+      fullHead
+      metaDesc
+      metaKeywords
+      metaRobotsNofollow
+      metaRobotsNoindex
+      opengraphAuthor
+      opengraphDescription
+
+      opengraphImage {
+        __typename
+        id
+      }
+
+      opengraphModifiedTime
+      opengraphPublishedTime
+      opengraphPublisher
+      opengraphSiteName
+      opengraphTitle
+      opengraphType
+      opengraphUrl
+      readingTime
+
+      schema {
+        articleType
+        pageType
+        raw
+      }
+
+      title
+      twitterDescription
+
+      twitterImage {
+        __typename
+        id
+      }
+
+      twitterTitle
+    }
+
+    slug
+    status
+
+    template {
+      templateName
+
+      __typename
+    }
+
+    title
+    uri
+    __typename
+  }
+}
