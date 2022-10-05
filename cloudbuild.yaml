@@ -1,0 +1,13 @@
+steps: 
+  - name: node:10.15.1 
+    entrypoint: npm 
+    args: ["install"] 
+  - name: node:10.15.1 
+    entrypoint: npm 
+    args: ["add", "firebase-tools"]
+  - name: node:10.15.1 
+    entrypoint: npm 
+    args: ["run", "cbuild"] 
+  - name: "node:10.15.1" 
+    entrypoint: "./node_modules/.bin/firebase" 
+    args: ["deploy", "--project", "vf-stand-designer", "--token", "$_TOKEN", "--only hosting"]
